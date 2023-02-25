@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Inter-VariableFont";
+  src: url(/app/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter-VariableFont", sans-serif;
+  color: var(--newsBlue);
+}
+
+h1 {
+  font-size: clamp(1.75rem, 1rem + 2vw, 2.5rem);
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+:root {
+  --newsBlack: hsl(0, 0%, 0%);
+  --newsWhite: hsl(0, 0%, 100%);
+  --newsGray: hsl(0, 0%, 50%);
+  --newsBlue: hsl(250, 96%, 5%);
+  --newsOrange: hsl(40, 81%, 59%);
+  --newsRed: hsl(0, 89%, 63%);
+}/*# sourceMappingURL=style.css.map */
