@@ -3,4 +3,16 @@
  src: url(/app/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
 
+@font-face {
+ font-family: 'Inter-VariableFontBold';
+ src: url(/app/assets/fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+ font-family: 'Inter-VariableFontExtraBold';
+ src: url(/app/assets/fonts/static/Inter-ExtraBold.ttf);
+}
+
 $font: 'Inter-VariableFont', sans-serif;
+$font1: 'Inter-VariableFontBold', sans-serif;
+$font2: 'Inter-VariableFontExtraBold', sans-serif;

@@ -2,7 +2,33 @@
 
 
 h1 {
- font-size: clamp(u.rem(28), u.rem(16) + 2vw, u.rem(40));
+ font-size: clamp(u.rem(40), u.rem(16) + 2vw, u.rem(60));
+ color: var(--newsBlack);
+ font-family: u.$font2;
+ margin: 0;
+}
+
+h2 {
+ color: var(--newsOrange);
+ font-weight: 900;
+}
+
+.h3 {
+ margin: 0;
+ font-size: u.rem(18);
+ font-weight: 600;
+}
+
+h4 {
+ color: var(--newsBlack);
+ font-weight: 900;
+ font-family: u.$font2;
+}
+
+.numbers {
+ font-weight: 900;
+ font-family: u.$font2;
+ font-size: u.rem(32);
 }
 
 ul,li {
@@ -15,4 +41,9 @@ a,
 a:visited,
 a:active {
  text-decoration: none;
+}
+
+p{
+ font-size: u.rem(14);
+ line-height: u.rem(25);
 }

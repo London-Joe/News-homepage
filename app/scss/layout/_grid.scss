@@ -6,6 +6,86 @@
   gap: var(--gap, u.rem(16));
 }
 
+.grid {
+  display: grid;
+  gap: var(--gap, u.rem(16));
+}
+
+img {
+  width: 100%;
+}
+
+.button {
+  width: u.rem(160);
+  height:u.rem(50);
+  background-color: var(--newsRed);
+  border: 0;
+
+  & a {
+    color: var(--newsWhite);
+    font-size: u.rem(12);
+    font-weight: 600;
+    letter-spacing: u.rem(3);
+    text-transform: uppercase;
+  }
+}
+
+hr{
+  background-color: var(--newsWhite);
+}
+
+
+.main {
+  grid-template-columns: 1fr;
+  margin-inline: u.rem(32);
+
+  &__content{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    &News{
+      display: grid;
+      grid-template-columns: 1fr;
+
+      
+    }
+  }
+
+  &__contentAside{
+    background-color: var(--newsBlue);
+    display: grid;
+    gap: u.rem(10);
+    padding-inline: u.rem(16);
+    margin-block: u.rem(56);
+
+    &-items{
+      color: var(--newsWhite);
+      margin-block: u.rem(10);
+      
+      p{
+        margin-block-end: u.rem(30);
+      }
+    }
+  }
+
+  // extra content
+  &__extraContent{
+    display: grid;
+    margin-bottom: u.rem(70);
+
+    &-items{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr u.rem(10);
+      gap: u.rem(30);
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+
+}
+
 .header {
   align-items: center;
   justify-content: space-around;
@@ -38,7 +118,7 @@
     inset: 0 0 0 0%;
     z-index: 400;
     transform: translateX(100%);
-    background: hsl(0 0% 100% / 0.1);
+    background: hsla(0, 10%, 53%, 0.4);
     transition: 350ms ease-out;
 
 
