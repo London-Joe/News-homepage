@@ -46,12 +46,22 @@ h2 {
   margin: 0;
   font-size: 1.125rem;
   font-weight: 600;
+  cursor: pointer;
+}
+
+.h3:hover {
+  color: var(--newsOrange);
 }
 
 h4 {
   color: var(--newsBlack);
   font-weight: 900;
   font-family: "Inter-VariableFontExtraBold", sans-serif;
+  cursor: pointer;
+}
+
+h4:hover {
+  color: var(--newsRed);
 }
 
 .numbers {
@@ -96,7 +106,7 @@ p {
   gap: var(--gap, 1rem);
 }
 
-img {
+img, .img {
   width: 100%;
 }
 
@@ -112,6 +122,10 @@ img {
   font-weight: 600;
   letter-spacing: 0.1875rem;
   text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: var(--newsBlack);
 }
 
 hr {
@@ -153,13 +167,13 @@ hr {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 0.625rem;
   gap: 1.875rem;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .header {
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .header__logo {
   margin: 2rem;
@@ -170,10 +184,13 @@ hr {
 .header__navMenu a {
   font-weight: 600;
   margin-inline-end: 0.75rem;
-  color: var(--newsBlack);
+  color: var(--newsGray);
+}
+.header__navMenu a:hover {
+  color: var(--newsRed);
 }
 
-@media (max-width: 43.74875em) {
+@media (max-width: 56.24875em) {
   .header {
     justify-content: space-between;
   }
@@ -217,5 +234,34 @@ hr {
   }
   .header__mobileNavToggle[aria-expanded=true] {
     background-image: url(/app/assets/images/icon-menu-close.svg);
+  }
+}
+@media (min-width: 56.25em) {
+  .header {
+    margin-inline: 5.3125rem;
+    margin-bottom: 1.25rem;
+  }
+  .main {
+    grid-template-rows: 1fr 1fr;
+    margin-inline: 6.25rem;
+  }
+  .main__extraContent-items {
+    margin-inline: 1.25rem;
+  }
+  .main__content {
+    grid-template-columns: 2fr 1fr;
+    gap: 1.875rem;
+  }
+  .main__contentNews-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.125rem;
+    align-items: center;
+  }
+  .main__contentAside {
+    margin-block: 0px;
+  }
+  .main__extraContent {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }/*# sourceMappingURL=style.css.map */

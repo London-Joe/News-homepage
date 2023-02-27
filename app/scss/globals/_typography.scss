@@ -17,12 +17,22 @@ h2 {
  margin: 0;
  font-size: u.rem(18);
  font-weight: 600;
+ cursor: pointer;
+}
+
+.h3:hover {
+ color: var(--newsOrange);
 }
 
 h4 {
  color: var(--newsBlack);
  font-weight: 900;
  font-family: u.$font2;
+ cursor: pointer;
+}
+
+h4:hover {
+ color: var(--newsRed);
 }
 
 .numbers {
