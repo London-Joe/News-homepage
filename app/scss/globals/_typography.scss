@@ -3,7 +3,7 @@
 
 h1 {
  font-size: clamp(u.rem(40), u.rem(16) + 2vw, u.rem(60));
- color: var(--newsBlack);
+ color: var(--newsBlue);
  font-family: u.$font2;
  margin: 0;
 }
@@ -25,7 +25,7 @@ h2 {
 }
 
 h4 {
- color: var(--newsBlack);
+ color: var(--newsBlue);
  font-weight: 900;
  font-family: u.$font2;
  cursor: pointer;
@@ -41,6 +41,7 @@ h4:hover {
  font-weight: 900;
  font-family: u.$font2;
  font-size: u.rem(32);
+ color: var(--newsGray);
 }
 
 ul,li {

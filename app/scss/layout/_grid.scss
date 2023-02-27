@@ -35,7 +35,9 @@ img, .img {
 }
 
 hr{
-  background-color: var(--newsWhite);
+  background-color: var(--newsBlack);
+  height: u.rem(1);
+  border: none;
 }
 
 
@@ -68,6 +70,7 @@ hr{
       
       p{
         margin-block-end: u.rem(30);
+        color: var(--newsGray);
       }
     }
   }
@@ -146,6 +149,10 @@ hr{
     background: var(--newsWhite);
     backdrop-filter: blur(u.rem(16));
     
+
+    & a{
+      color: var(--newsBlack);
+    }
   }
   }
   
