@@ -29,6 +29,8 @@ h4 {
  font-weight: 900;
  font-family: u.$font2;
  cursor: pointer;
+ margin-block: 0;
+ padding-block: u.rem(6);
 }
 
 h4:hover {
@@ -55,5 +57,5 @@ a:active {
 
 p{
  font-size: u.rem(14);
- line-height: u.rem(25);
+ line-height: u.rem(20);
 }
