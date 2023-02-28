@@ -82,7 +82,7 @@ hr{
 
     &-items{
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 2fr;
       grid-template-rows: 1fr u.rem(10);
       gap: u.rem(30);
       justify-content: space-evenly;

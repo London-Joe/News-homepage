@@ -170,7 +170,7 @@ hr {
 }
 .main__extraContent-items {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 0.625rem;
   gap: 1.875rem;
   justify-content: space-evenly;
